@@ -1,13 +1,4 @@
-<%= form_for @attorney, :url => admin_attorneys_path, :html => { :multipart => true } do |f| %>
-<%= f.label :first_name %>
-<%= f.text_field :first_name %><br />
-
-<%= f.label :Last_name %>
-<%= f.text_field :last_name %><br />
-
-<%= f.label :Profile %>
-<%= f.text_area :Profile %><br />
- <%= f.file_field :avatar %><br/>
-
- <%= f.submit "Save Attorney" %>
+<%= semantic_form_for [:admin, @attorney] do |f| %>
+<%= f.inputs :first_name, :last_name, :Profile, :avatar %><br />
+ <%= f.actions %>
 <% end %>

@@ -17,7 +17,6 @@ index do
    		row	:avatar do |p|
    			image_tag p.avatar.url
    		end
-   	# "#{attorney.first_name} #{attorney.last_name} Profile"
        end
    end   
 
