@@ -36,13 +36,14 @@ group :development, :test do
   gem 'sqlite3'
   gem 'faker', '1.0.1'
   #gem 'google-analytics-rails'
-  gem 'will_paginate', '3.0.3'
-  gem 'bootstrap-will_paginate', '0.0.6'
+  gem 'kaminari'
+  #gem 'bootstrap-will_paginate', '0.0.6'
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'rails-erd'
-  gem 'devise'
+  gem 'activeadmin'
   gem "blogit"
+  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 end
 
 group :production do
@@ -53,9 +54,11 @@ group :production do
   gem 'unicorn'
   gem 'rvm-capistrano'
   gem 'google-analytics-rails'
+  gem 'activeadmin'
 end
 
-gem 'jquery-rails'
+gem "jquery-rails", "2.3.0"
+#gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
