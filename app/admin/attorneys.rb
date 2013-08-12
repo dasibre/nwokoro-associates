@@ -1,8 +1,8 @@
-ActiveAdmin.register Attorney do
+ActiveAdmin.register Attorney, :as => "Associates" do
 index do                            
     column :first_name                     
     column :last_name        
-    column :Profile          
+    column :profile          
     column :avatar do |p|
     	image_tag p.avatar.url
     end           
@@ -13,7 +13,7 @@ index do
    	attributes_table do
    		row :first_name
    		row :last_name
-   		row	:Profile
+   		row	:profile
    		row	:avatar do |p|
    			image_tag p.avatar.url
    		end

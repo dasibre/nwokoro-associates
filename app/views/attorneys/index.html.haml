@@ -1,0 +1,11 @@
+- provide(:title, "Attorneys")
+%h1 Attorneys
+%ul.attorneys
+  - @attorneys.each do |attorney|
+    %li= attorney.full_name
+    - if attorney.profile.length > 250
+      %li= truncate(attorney.profile, :length => 250)
+      = link_to '...Read more', attorney_path(attorney)
+    -else
+      %li= attorney.profile
+    %li= image_tag attorney.avatar.url(:thumb)

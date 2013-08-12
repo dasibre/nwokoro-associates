@@ -5,12 +5,12 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Nwokoroassociates"
+  config.site_title = "Nwokoro & associates"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+   config.site_title_link = "/"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
@@ -26,7 +26,13 @@ ActiveAdmin.setup do |config|
   #
   # eg:
   #   config.default_namespace = :hello_world
-  #
+  #  config.namespace :admin do |admin|
+  #   admin.build_menu do |menu|
+  #     menu.add :label => "Add New Post", :url => "/news&blog/posts/new", :priority => 0
+  #   end
+  # end
+      
+
   # This will create resources in the HelloWorld module and
   # will namespace routes to /hello_world/*
   #

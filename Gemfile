@@ -38,7 +38,7 @@ group :development, :test do
   #gem 'google-analytics-rails'
   gem 'kaminari'
   #gem 'bootstrap-will_paginate', '0.0.6'
-  gem 'binding_of_caller'
+  #gem 'binding_of_caller'
   gem 'meta_request'
   gem 'rails-erd'
   gem 'activeadmin'

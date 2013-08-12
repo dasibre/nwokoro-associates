@@ -1,4 +1,9 @@
 <%= semantic_form_for [:admin, @attorney] do |f| %>
-<%= f.inputs :first_name, :last_name, :Profile, :avatar %><br />
+<%= f.inputs do %>
+	<%= f.input :first_name %>
+	<%= f.input :last_name %>
+	<%= f.input :profile, :label => "Attorney Profile" %>
+	<%= f.input :avatar, :label => "Profile Photo" %><br />
+	<% end %>
  <%= f.actions %>
 <% end %>

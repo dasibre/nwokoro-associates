@@ -1,0 +1,6 @@
+%h1= @attorney.full_name
+%ul
+  %li= @attorney.profile
+  %li= image_tag @attorney.avatar.url(:medium)
+
+= link_to "back", attorneys_path

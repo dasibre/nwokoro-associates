@@ -1,0 +1,9 @@
+  <%= render 'error_messages', object: f.object %>
+    <%= field do %>
+      <div id="title"><%= f.text_field :title, placeholder: t(:give_your_post_a_title, scope: 'blogit.posts') %></div>
+    <% end %>
+
+    <%= field do %>
+      <%= f.text_area :body, placeholder: t(:write_something_here, scope: 'blogit.posts') %>
+    <% end %>
+

@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nwokoroassociates</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag 'reset.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'skeleton.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'superfish.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'flexslider.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'touchTouch.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,600italic,600,400italic,300italic,300,700,700italic,800,800italic' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oswald:400,700,300' %>
+<!--[if lt IE 8]><%= stylesheet_link_tag 'ie.css', :media => "screen, projection" %><![endif]-->
+  <%= stylesheet_link_tag "application.css", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="inner">
+<div id="wrapper">
+	<div class="w2">
+		<header id="header">
+			<div class="section">
+				<h1 class="logo"><%= link_to "N&A", '/' %></h1>
+				<div class="contact-box">
+							<strong class="phone">(212) 785-1060</strong>	
+						</div>
+			</div>
+			<nav class="nav-box">
+			<%= render 'layouts/nav' %>
+			</nav>
+
+		</header>
+		<center><h1>Nwokoro & Associates, P.C.
+           Attorneys At Law</h1></center>
+           <div id="main">
+				<div class="gallery">
+					<div class="flexslider-container">
+					 <div id="slider" class="flexslider holder">
+						<ul class="slides">
+						  <li>
+						    <img src="./images/wallstreetsign1.png" alt="" />
+						 </li>		
+						</ul>
+					</div>
+				</div>	
+			</div>
+			   <div class="divider">							
+</div>
+	</div>
+</div>
 
 <%= yield %>
-
+<div class="divider">							
+</div>
+<%= render 'layouts/footer' %>
 </body>
 </html>

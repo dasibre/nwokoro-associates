@@ -2,5 +2,8 @@
 
 FactoryGirl.define do
   factory :attorney do
+  	first_name "Emeka"
+  	last_name	"Nwokoro"
+  	 profile	"lorem ipsum"
   end
 end
