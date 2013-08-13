@@ -1,11 +1,19 @@
 - provide(:title, "Attorneys")
-%h1 Attorneys
-%ul.attorneys
-  - @attorneys.each do |attorney|
-    %li= attorney.full_name
-    - if attorney.profile.length > 250
-      %li= truncate(attorney.profile, :length => 250)
-      = link_to '...Read more', attorney_path(attorney)
-    -else
-      %li= attorney.profile
-    %li= image_tag attorney.avatar.url(:thumb)
+#main
+  .main-container.holder
+    .heading
+      %center
+        %h1 N&A ATTORNEYS
+    / grid-cols
+    .grid-cols
+      / col50
+      - @attorneys.each do |attorney|
+        .col50
+          .col-holder
+            = image_tag(attorney.avatar.url(:thumb), class: "image alignleft")
+            %h5= attorney.full_name
+            - if attorney.profile.length > 250
+              = truncate(attorney.profile, :length => 230)
+              = link_to 'Read more', attorney_path(attorney)
+            - else
+              = attorney.profile

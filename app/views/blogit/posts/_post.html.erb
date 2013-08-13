@@ -1,17 +1,19 @@
+<div class="posts">    
 <%= content_tag(:article, id: "blog_post_#{post.id}", class: "blog_post") do %>
-
+<article class="post-box">
   <%# Render the header for this blog post %>
   <%= render "blogit/posts/post_head", post: post %>
-  
+  <div class="meta">
   <%# Render info about the person who wrote this post %>
   <%= render "blogit/posts/blogger_information", post: post %>
-
+  </div>
+<div class="text-box">
   <%# Render the body of this blog post (as Markdown) %>
   <%= render "blogit/posts/post_body", post: post %>
-
+</div>
   <%# Render admin links to edit/delete this post %>
   <%= render "blogit/posts/post_links", post: post %>
-
+</article>
   
 
   <%# Render the no. of comments %>
@@ -19,3 +21,4 @@
     post: post if defined?(show_comments_count) and show_comments_count %>
 
 <% end %>
+</div>

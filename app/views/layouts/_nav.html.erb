@@ -1,18 +1,21 @@
 			
 				<ul id="nav">
-							<li class="active"><a href="./index.html">Home</a></li>						
-							<li><a href="./about.html">About Us</a></li>
-							<li><a href="./Areas-of-Practice.html">Areas of Practice</a></li>
-							<li><a href="./Attorneys.html">Attorneys</a></li>
-							<li><a href="./ContactUs.php.html">Contact Us</a></li>						
-							<li><a href="./Blog.html">Blog</a></li>
+							<%= nav_link('Home','/') %>						
+							<%= nav_link('About Us', '/about_us') %>
+							<%= nav_link('Areas of Practice', '/areas_of_practice')%>
+							<%= nav_link('Attorneys', "/attorneys") %>
+							<%= nav_link('Contact Us', '/contact_us') %>						
+							<%= nav_link('Blog', '/news/posts')%>
+							<% if current_admin_user %>
+								<%= nav_link('Sign out', "/admin/logout") %>
+								<% end %>
 									
 						</ul>
 						<select class="mobile-menu">
-							<option value="index.html" />Home													
-							<option value="about.html" />- About Us
-							<option value="Areas-of-Practice.html" />- Areas of Practice
-							<option value="Attorneys.html" />- Attorneys
+							<option value=<%= link_to '/' %>/>Home													
+							<option value=<%= link_to '/' %> />- About Us
+							<option value=<%= link_to '/' %> />- Areas of Practice
+							<option value=<%= link_to '/' %> />- Attorneys
 							<option value="ContactUs.php" />- Contact Us
-							<option value="Blog.html" />- Blog		
+							<option value=<%= link_to '/' %> />- Blog		
 						</select>

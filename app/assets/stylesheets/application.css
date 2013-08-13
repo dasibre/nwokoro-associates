@@ -155,7 +155,7 @@ h6 {
 /* logo */
 .logo {
 	float:left;
-	background:url(../images/logo.png) no-repeat;
+	background:url(/assets/logo.png) no-repeat;
 	width:174px;
 	height:50px;
 	overflow:hidden;
@@ -179,7 +179,7 @@ h6 {
 	color:#666;
 	float:left;
 	font:300 14px/21px "Oswald", Arial, Helvetica, sans-serif;
-	background:url(../images/ico-phone.png) no-repeat 0 4px;
+	background:url(/assets/ico-phone.png) no-repeat 0 4px;
 	padding:1px 0 0 25px;
 }
 /* social */
@@ -1125,7 +1125,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 	width:100%;
 	float:left;
 }
-.c1 {margin:0 340px 0 20px;}
+.c1 {margin:0 180px 0 20px;}
 /* post-box */
 .post-box {
 	width:100%;
@@ -1982,7 +1982,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 }
 .boxes-section.center .text-box {padding:0 10px;}
 .boxes-section.center h3 {margin:0 0 11px;}
-/* price-table */
+/* price-table 
 .price-table {
 	font:14px/16px Arial, Helvetica, sans-serif;
 	color:#666;
@@ -2079,6 +2079,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 	height:103px;
 	padding:15px 0 0;
 }
+*/
 /* sidebar */
 #sidebar {
 	float:right;

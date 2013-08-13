@@ -1,17 +1,34 @@
 <%= login_required class: "actions", id: "new_blog_post_link" do %>
   <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path %>
 <% end %>
-
-<% if @posts.any? %>
-
+<div id="main">
+<div class="content-panel">
+ <div class="page-title holder">
+ 	<h2>News Blog</h2>
+ 	<ul class="breadcrumbs">
+ 		<li><%= link_to "Home", "/" %></li>
+ 		<li>/</li>
+ 		<li>Blog</li>
+ 	</ul>
+ </div>
+</div>
+<div class="container holder">
+ <div id="content">
+ <div class="c1">
+ 	<% if @posts.any? %>
+<%#= spacer_template: "blog_post_spacer" %>
   <%= render partial: "blogit/posts/post",
     collection: @posts,
-    spacer_template: "blog_post_spacer",
     locals: {show_comments_count: (Blogit.configuration.include_comments == :active_records) }  %>
 <% else %>
 
   <%= render partial: "blogit/posts/empty" %>
 
 <% end %>
+ </div>
+ </div>
+</div>
+</div>
+
 
 <%= render "pagination" %>
