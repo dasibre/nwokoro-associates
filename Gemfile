@@ -39,6 +39,7 @@ group :development, :test do
   gem 'kaminari'
   #gem 'bootstrap-will_paginate', '0.0.6'
   #gem 'binding_of_caller'
+  gem 'redcarpet'
   gem 'meta_request'
   gem 'rails-erd'
   gem 'activeadmin'
@@ -49,12 +50,15 @@ end
 group :production do
   gem 'pg'
   gem 'client_side_validations' 
-  gem 'devise'
+  # gem 'devise'
   gem 'haml-rails'
-  gem 'unicorn'
-  gem 'rvm-capistrano'
-  gem 'google-analytics-rails'
+  # gem 'unicorn'
+  # gem 'rvm-capistrano'
+  # gem 'google-analytics-rails'
   gem 'activeadmin'
+  gem 'redcarpet'
+  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+  gem "blogit"
 end
 
 gem "jquery-rails", "2.3.0"
