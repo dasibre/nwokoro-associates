@@ -1,4 +1,4 @@
-include Blogit
+# include Blogit
 ActiveAdmin.register Blogit::Post do
 	index do                            
     column :title                     

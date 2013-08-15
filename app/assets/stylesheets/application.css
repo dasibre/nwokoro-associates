@@ -248,7 +248,7 @@ h6 {
 	float:left;
 	position:relative;
 	padding:0 23px 19px;
-	background:url(../images/separator.png) no-repeat 0 4px;
+	background:url(/assets/separator.png) no-repeat 0 4px;
 }
 .nav-box > ul > li:first-child {
 	background:none;
