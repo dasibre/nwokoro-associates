@@ -1,7 +1,7 @@
 Nwokoroassociates::Application.routes.draw do
 
   root :to => 'pages#home'
-  mount Blogit::Engine => "news", as: "news_blog"
+  mount Blogit::Engine => "news"
   # get "/news/posts", to: "blogit/posts#index"
 
   get "areas_of_practice", to: "pages#areas_of_practice"
