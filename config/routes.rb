@@ -1,18 +1,15 @@
 Nwokoroassociates::Application.routes.draw do
 
-  
-  
-  
   root :to => 'pages#home'
-  mount Blogit::Engine => "/news", as: "news_blog"
-  # get "pages/home"
+  mount Blogit::Engine => "news", as: "news_blog"
+  # get "/news/posts", to: "blogit/posts#index"
 
   get "areas_of_practice", to: "pages#areas_of_practice"
   get "contact_us", to: "pages#contact_us"
   get "about_us", to: "pages#about_us"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
- # mount Blogit::Engine => "/news", as: "news_blog"
+  
  resources :attorneys, only: [:index, :show]
 
  # get "attorneys/index"
