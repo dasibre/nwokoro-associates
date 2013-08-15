@@ -25,17 +25,17 @@ ActiveAdmin.register_page "Dashboard" do
     end
 
     #Recent Posts dashboard Panel
-    columns do
-      column do
-        panel "Recent Posts" do
-          ul do
-            Blogit::Post.all.map do |post|
-              li link_to(post.title, news_blog.post_url(post))
-            end
-          end
-        end
-    end
-    end
+    # columns do
+    #   column do
+    #     panel "Recent Posts" do
+    #       ul do
+    #         Blogit::Post.all.map do |post|
+    #           li link_to(post.title, news_blog.post_url(post))
+    #         end
+    #       end
+    #     end
+    # end
+    # end
 
     #   column do
     #     panel "Info" do
