@@ -5,7 +5,7 @@
 							<%= nav_link('Areas of Practice', "/areas_of_practice")%>
 							<%= nav_link('Attorneys', "/attorneys") %>
 							<%= nav_link('Contact Us', "/contact_us") %>						
-							<%= nav_link('Blog', news_blog.posts_path)%>
+							<%= nav_link('Blog', "#{blogit.posts_path}")%>
 							<% if current_admin_user %>
 								<%= nav_link('Sign out', "/admin/logout") %>
 								<%= nav_link('Admin', "/admin") %>
