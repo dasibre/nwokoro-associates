@@ -1,5 +1,5 @@
 include Blogit
-ActiveAdmin.register Blogit::Post, :as => "Post" do
+ActiveAdmin.register Blogit::Post do
 	index do                            
     column :title                     
     column :body      
