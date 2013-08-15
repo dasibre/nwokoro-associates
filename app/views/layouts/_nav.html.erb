@@ -1,10 +1,5 @@
 			
-				<ul id="nav">
-							<%= nav_link('Home', "/") %>						
-							<%= nav_link('About Us', "/about_us") %>
-							<%= nav_link('Areas of Practice', "/areas_of_practice")%>
-							<%= nav_link('Attorneys', "/attorneys") %>
-							<%= nav_link('Contact Us', "/contact_us") %>						
+				<ul id="nav">						
 							<%= nav_link('Blog', news_blog.posts_path)%>
 							<% if current_admin_user %>
 								<%= nav_link('Sign out', "/admin/logout") %>
