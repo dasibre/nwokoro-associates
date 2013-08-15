@@ -9,7 +9,7 @@ Nwokoroassociates::Application.routes.draw do
   get "about_us", to: "pages#about_us"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  mount Blogit::Engine => "/blog"
+  mount Blogit::Engine => "/news", as: "news_blog"
   
  resources :attorneys, only: [:index, :show]
 
