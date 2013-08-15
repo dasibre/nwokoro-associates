@@ -48,7 +48,7 @@ Blogit.configure do |config|
   # config.include_admin_links = true
 
   # The default format for parsing the blog content.
-    config.default_parser = :markdown
+    #config.default_parser = :markdown
 
   # If blog content contains code, this should be highlighted using
   # albino.
