@@ -5,9 +5,9 @@
 										&nbsp;
                                       
 										<ul class="links">
-                                            <li><a href="./about.html">ABOUT US</a></li>
-											<li><a href="./ContactUs.php.html">CONTACT US</a></li>
-											<li><a href="./Areas-of-Practice.html">AREAS OF PRACTICE</a></li>
+                                            <li><%= link_to "About Us", about_us_path %></li>
+											<li><%= link_to "Contact Us", contact_us_path %></li>
+											<li><%= link_to "Areas of Practice", areas_of_practice_path %></li>
 										</ul>
 									</div>
 								</div>
@@ -20,7 +20,7 @@
 											<dt>Telephone:</dt>
 											<dd>(212) 785-10608</dd>
 											<dt>E-mail:</dt>
-											<dd><a href="mailto:Direct@Nwokoroassociates.com">Direct@Nwokoroassociates.com</a></dd>
+											<dd><%= mail_to "Direct@Nwokoroassociates.com", "Send Us E-mail" %></dd>
 										<address>
                                         <dt>Address:</dt>
 											      <b>82 Wall Street, Suite 610, New York, New York 10005</b>
