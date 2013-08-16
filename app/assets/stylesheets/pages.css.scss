@@ -96,6 +96,7 @@ html[xmlns] .slides {display: block;}
 }
 
 
+
 p.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
 p.flex-caption {width: 96%; padding: 2%; margin-top:-54px; position: relative; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 12px; line-height: 15px;}
@@ -108,7 +109,7 @@ p.flex-caption {width: 96%; padding: 2%; margin-top:-54px; position: relative; l
 .post-box {
 	width:100%;
 	padding:0 0 14px;
-	border-bottom: none;
+	border-bottom: 1px solid #e4e4e4;
 }
 
 /* practice table */
@@ -208,3 +209,5 @@ p.flex-caption {width: 96%; padding: 2%; margin-top:-54px; position: relative; l
 	height:103px;
 	padding:15px 0 0;
 }
+
+

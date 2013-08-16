@@ -1,6 +1,6 @@
 <div class="posts">    
-<%= content_tag(:article, id: "blog_post_#{post.id}", class: "blog_post") do %>
-<article class="post-box">
+<%= content_tag(:article, class: "post-box") do %>
+
   <%# Render the header for this blog post %>
   <%= render "blogit/posts/post_head", post: post %>
   <div class="meta">
@@ -13,7 +13,6 @@
 </div>
   <%# Render admin links to edit/delete this post %>
   <%= render "blogit/posts/post_links", post: post %>
-</article>
   
 
   <%# Render the no. of comments %>

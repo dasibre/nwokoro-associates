@@ -62,7 +62,7 @@ figure {
 	margin:0;
 	padding:0;
 }
-html {background: url(../images/body-bg.jpg) 0 0 repeat;}
+html {background: url(/assets/body-bg.jpg) 0 0 repeat;}
 body {
 	margin:0;
 	font:13px/21px Arial, Helvetica, sans-serif;
@@ -201,6 +201,7 @@ h6 {
 	overflow:hidden;
 	text-indent:-9999px;
 }
+/*
 .social .twitter {background:url(../images/twitter.png) no-repeat;}
 .social .twitter:hover {background:url(../images/twitter-hover.png) no-repeat;}
 .social .facebook {background:url(../images/facebook.png) no-repeat;}
@@ -215,6 +216,7 @@ h6 {
 .social .google:hover {background:url(../images/google-hover.png) no-repeat;}
 .social .rss {background:url(../images/rss.png) no-repeat;}
 .social .rss:hover {background:url(../images/rss-hover.png) no-repeat;}
+*/
 /* nav-box */
 .nav-box {
 	background:#343434;
@@ -603,7 +605,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 /*	padding:0 0 20px;*/
 	border:0;
 	padding:5px 0 0;
-	background:url(../images/separator4.png) repeat-x 0 20px;
+	background:url(/assets/separator4.png) repeat-x 0 20px;
 }
 .blog-section .btn-prev,
 .blog-section .btn-next, 
