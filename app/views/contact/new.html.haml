@@ -44,28 +44,27 @@
       .col-holder
         / post-box
         <article class="post-box">
-        / comment-form
-        %form#cont_form.comment-form{:action => "#", :method => "post"}/
-        %fieldset
+        = form_for @message, :url => contact_path, :html => { class: "comment-form", id: "cont_form"} do |f|
+          %fieldset
           .meta
             %h3 Contact Us
           .row
-            %label{:for => "username"} Your Name  (*)
+            = f.label :name, "Your Name"
             %span.text
-              %input#username.text{:class => "validate[required]", :name => "username", :type => "text", :value => ""}/
+              = f.text_field :name, placeholder: "required"
           .row
-            %label{:for => "email"} Your Email  (*)
+            = f.label :email, "Email"
             %span.text
-              %input#email.text{:class => "validate[required,custom[email]]", :name => "email", :type => "text", :value => ""}/
+              = f.text_field :email, placeholder: "required"
           .row
-            %label{:for => "subject"} Your Subject
+            = f.label :subject, "Subject"
             %span.text
-              %input#subject.text{:name => "subject", :type => "text", :value => ""}/
+              = f.text_field :subject
           .row
-            %label{:for => "message"} Your Message  (*)
-            %span.textarea
-              %textarea#message.w_focus{:class => "validate[required]", :cols => "30", :name => "message", :rows => "10"}
+            = f.label :body, "Message"
+            %span.text
+              = f.text_area :body, placeholder: "required"
           .row
             %span.submit
               Send Email
-              %input{:type => "submit", :value => "Send Email"}/
+              = f.submit "Send Message"
