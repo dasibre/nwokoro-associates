@@ -1,5 +1,8 @@
 Nwokoroassociates::Application.routes.draw do
 
+ match 'contact', to: 'contact#new', as: "contact", via: :get
+ match 'contact', to: 'contact#create', as: "contact", via: :post
+
   root :to => 'pages#home'
   
   # get "/news/posts", to: "blogit/posts#index"
