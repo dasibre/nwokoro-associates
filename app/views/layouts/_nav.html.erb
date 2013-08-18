@@ -4,7 +4,7 @@
 							<%= nav_link('About Us', about_us_path) %>
 							<%= nav_link('Areas of Practice', areas_of_practice_path)%>
 							<%= nav_link('Attorneys', attorneys_path) %>
-							<%= nav_link('Contact Us', contact_us_path) %>						
+							<%= nav_link('Contact Us', contact_path) %>						
 							<%= nav_link('Blog', "#{news_blog.posts_path}")%>
 							<% if current_admin_user %>
 								<%= nav_link('Sign out', "/admin/logout") %>
@@ -13,10 +13,11 @@
 									
 						</ul>
 						<select class="mobile-menu">
-							<option value=<%= link_to '/' %>/>Home													
-							<option value=<%= link_to '/' %> />- About Us
-							<option value=<%= link_to '/' %> />- Areas of Practice
-							<option value=<%= link_to '/' %> />- Attorneys
-							<option value="ContactUs.php" />- Contact Us
-							<option value=<%= link_to '/' %> />- Blog		
+						<option value="" selected="selected">Select</option>
+							<option value= "/" >Home</option>													
+							<option value= "/about_us"> About Us</option>
+							<option value= "/areas_of_practice"> Areas of Practice</option>
+							<option value= "/attorneys"> Attorneys</option>
+							<option value="/contact" > Contact Us</option>
+							<option value= "/blog" > Blog		</option>
 						</select>

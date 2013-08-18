@@ -3086,3 +3086,12 @@ input[type=submit], input[type=text], input[type=password], input[type=file], te
 	margin:0 0 0 -20px;
 	vertical-align:top;
 }
+
+/* flash notice */
+.flash_message {
+	color: red;
+}
+
+.notice_success {
+	color: green;
+}

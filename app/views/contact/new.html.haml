@@ -42,8 +42,10 @@
     / col67
     .col67
       .col-holder
+        .flash_message
+          = flash[:alert]
         / post-box
-        <article class="post-box">
+        <article class="contact-post-box">
         = form_for @message, :url => contact_path, :html => { class: "comment-form", id: "cont_form"} do |f|
           %fieldset
           .meta
@@ -62,8 +64,8 @@
               = f.text_field :subject
           .row
             = f.label :body, "Message"
-            %span.text
-              = f.text_area :body, placeholder: "required"
+            %span.textarea
+              = f.text_area :body, placeholder: "required", cols: 30, rows: 10, class: "w_focus validate[required]", id: "message"
           .row
             %span.submit
               Send Email

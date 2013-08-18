@@ -11,7 +11,7 @@
         .col50
           .col-holder
             = image_tag(attorney.avatar.url(:thumb), class: "image alignleft")
-            %h5= attorney.full_name
+            %h5= link_to "#{attorney.full_name}", attorney_path(attorney)
             - if attorney.profile.length > 250
               = truncate(attorney.profile, :length => 230)
               = link_to 'Read more', attorney_path(attorney)
