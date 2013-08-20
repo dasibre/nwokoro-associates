@@ -8,7 +8,7 @@ class Attorney < ActiveRecord::Base
   end
 
   def self.get_associates_order_by_title
-  	order("title == 'Principal' DESC", "title == 'Senior Associate' DESC")
+  	order("title LIKE 'Principal' DESC", "title LIKE 'Senior Associate' DESC")
   end
 
   def to_param
