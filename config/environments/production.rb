@@ -9,6 +9,18 @@ Nwokoroassociates::Application.configure do
     :secret_access_key => ENV['LbBGYNFVTeaSK7OlOwAKxCGOs2fcE3P1RidWZmO3']
     }
   }
+
+  #Email server configuration
+  config.action_mailer.smtp_settings = {
+  :address              => "smtpout.secureserver.net",
+  :port                 => 25,
+  :domain               => "nwokoroassociates.com",
+  :user_name            => "direct@nwokoroassociates.com",
+  :password             => "B@ckd00r",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+  }
+
   # Code is not reloaded between requests
   config.cache_classes = true
 

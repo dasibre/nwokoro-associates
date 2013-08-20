@@ -1,9 +1,9 @@
 class NotificationsMailer < ActionMailer::Base
-  default from: "jnaadjie@gmail.com"
-  default to: "jnaadjie@afrails.com"
+  default from: "direct@nwokoroassociates.com"
+  default to: "direct@nwokoroassociates.com"
 
   def new_message(message)
   	@message = message
-  	mail(subject: "[Nwokoroassociates.com) #{@message.subject}")
+  	mail(subject: "Nwokoroassociates.com Client Message - #{@message.subject}")
   end
 end
