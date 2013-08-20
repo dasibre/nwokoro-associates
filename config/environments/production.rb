@@ -1,6 +1,14 @@
 Nwokoroassociates::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  #AWS configuration bucket
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+    :bucket => ENV['CLIENT-ASSETS'],
+    :access_key_id => ENV['AKIAJTSTX24IHF5P3PJA'],
+    :secret_access_key => ENV['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']
+    }
+  }
   # Code is not reloaded between requests
   config.cache_classes = true
 

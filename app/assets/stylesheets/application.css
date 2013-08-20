@@ -2705,6 +2705,9 @@ iframe.contact-page-2 {
 	#gallery-carousel { display:none; }	
 }
 @media only screen and (max-width: 767px){
+	li {
+		display: block;
+	}
 	.social2 {margin:0;}
 	.social2 li {margin-right:2px;}
 	#header .section {max-width:none;}

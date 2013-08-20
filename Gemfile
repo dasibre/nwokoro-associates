@@ -48,6 +48,7 @@ group :development, :test do
   gem 'activeadmin'
   gem "blogit"
   gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+  gem "aws-sdk"
 end
 
 group :production do
@@ -61,6 +62,7 @@ group :production do
   gem 'activeadmin'
   gem 'redcarpet'
   gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+  gem "aws-sdk"
   gem "blogit"
 end
 
