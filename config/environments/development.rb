@@ -5,6 +5,15 @@ Nwokoroassociates::Application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
 
+  
+  # config.paperclip_defaults = {
+  #   :storage => :s3,
+  #   :bucket => 'CLIENT-ASSETS',
+  #   :s3_credentials => {
+  #   :access_key_id => ENV['AKIAJTSTX24IHF5P3PJA'],
+  #   :secret_access_key => ENV['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']
+  #   }
+  # }
   config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
