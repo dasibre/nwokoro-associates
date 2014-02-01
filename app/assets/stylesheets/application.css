@@ -73,7 +73,8 @@ body {
 }
 .inner {
 	background:#fbfbfb;
-	max-width:980px;
+	/*max-width:980px; */
+	max-width: 1099px;
 	margin:0 auto;
 	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.08);
 	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.08);
@@ -481,7 +482,8 @@ h6 {
 	font:italic 14px/21px Arial, Helvetica, sans-serif;
 }
 .holder {
-	max-width:940px;
+	/*max-width:940px; */
+	max-width: 1056px;
 	margin:0 auto;
 	padding:0 0 0;
 }
