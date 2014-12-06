@@ -8,10 +8,10 @@ Nwokoroassociates::Application.configure do
   
   # config.paperclip_defaults = {
   #   :storage => :s3,
-  #   :bucket => 'CLIENT-ASSETS',
+  #   :bucket => 'ENV[S3_BUCKET]',
   #   :s3_credentials => {
-  #   :access_key_id => ENV['AKIAJTSTX24IHF5P3PJA'],
-  #   :secret_access_key => ENV['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']
+  #   :access_key_id => ENV['XXXXXXXXXXXX'],
+  #   :secret_access_key => ENV['OOXOXOXOXOXOXOOXOXOXOXOXOXOX']
   #   }
   # }
   config.action_mailer.smtp_settings = {
