@@ -19,7 +19,7 @@ index do
    		row	:avatar do |p|
    			image_tag p.avatar.url(:medium)
    		end
-       end
+    end
    end   
 
    form do |f|
