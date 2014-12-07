@@ -33,7 +33,7 @@ group :development, :test do
   gem 'haml-rails'
   gem 'factory_girl_rails'
   #gem 'rvm-capistrano'
-  gem "better_errors"
+  gem 'better_errors'
   gem 'pry'
   gem 'client_side_validations'
   gem 'sqlite3'
@@ -46,9 +46,9 @@ group :development, :test do
   gem 'meta_request'
   gem 'rails-erd'
   gem 'activeadmin'
-  gem "blogit"
-  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-  gem "aws-sdk"
+  gem 'blogit'
+  gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+  gem 'aws-sdk'
 end
 
 group :production do
@@ -61,12 +61,12 @@ group :production do
   # gem 'google-analytics-rails'
   gem 'activeadmin'
   gem 'redcarpet'
-  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-  gem "aws-sdk"
-  gem "blogit"
+  gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+  gem 'aws-sdk'
+  gem 'blogit'
 end
 
-gem "jquery-rails", "2.3.0"
+gem 'jquery-rails', '2.3.0'
 #gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
