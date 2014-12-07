@@ -1,4 +1,4 @@
-ActiveAdmin.register Attorney, :as => 'Associates/Employees' do
+ActiveAdmin.register Attorney, :as => 'Associates' do
 index do                            
     column :first_name                     
     column :last_name  
