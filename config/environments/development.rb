@@ -15,11 +15,11 @@ Nwokoroassociates::Application.configure do
   #   }
   # }
   config.action_mailer.smtp_settings = {
-  :address              => "smtp.gmail.com",
+  :address              => 'smtp.gmail.com',
   :port                 => 587,
-  :domain               => "gmail.dev",
-  :user_name            => "jnaadjie@gmail.com",
-  :password             => "Kn@@djie7",
+  :domain               => ENV['EMAIL_DOMAIN'],
+  :user_name            => ENV['GMAIL_USER'],
+  :password             => ENV['GMAIL_PASSWORD'],
   :authentication       => :plain,
   :enable_starttls_auto => true
   }
@@ -57,5 +57,5 @@ Nwokoroassociates::Application.configure do
   config.assets.debug = true
 
   #Paper clip configuration
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  Paperclip.options[:command_path] = '/usr/local/bin/'
 end

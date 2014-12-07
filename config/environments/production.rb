@@ -3,20 +3,20 @@ Nwokoroassociates::Application.configure do
   #AWS configuration bucket
   config.paperclip_defaults = {
     :storage => :s3,
-    :bucket => 'CLIENT-ASSETS',
+    :bucket => ENV['AWS_BUCKET'],
     :s3_credentials => {
-    :access_key_id => ENV['AKIAJTSTX24IHF5P3PJA'],
-    :secret_access_key => ENV['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']
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 
   #Email server configuration
   config.action_mailer.smtp_settings = {
-  :address              => "smtpout.secureserver.net",
+  :address              => 'smtpout.secureserver.net',
   :port                 => 25,
-  :domain               => "nwokoroassociates.com",
-  :user_name            => "direct@nwokoroassociates.com",
-  :password             => "B@ckd00r",
+  :domain               => ENV['EMAIL_DOMAIN'],
+  :user_name            => ENV['USER_NAME'],
+  :password             => ENV['EMAIL_PASSWORD'],
   :authentication       => :plain,
   :enable_starttls_auto => true
   }
