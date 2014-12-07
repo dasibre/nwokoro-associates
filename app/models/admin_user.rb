@@ -11,8 +11,6 @@ class AdminUser < ActiveRecord::Base
   # attr_accessible :title, :body
 
   def username
-  	#name = self.email.split('@')
-  	#name.first
-    "Emeka Nwokoro"
+    self.email.split('@').first
   end
 end
