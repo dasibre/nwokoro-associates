@@ -1,4 +1,4 @@
-ActiveAdmin.register Attorney, :as => "Associates" do
+ActiveAdmin.register Attorney, :as => 'Associates/Employees' do
 index do                            
     column :first_name                     
     column :last_name  
@@ -26,9 +26,9 @@ index do
     f.inputs do 
     f.input :first_name
     f.input :last_name
-    f.input :title, as: :select, :collection => ["Principal", "Senior Associate", "Associate"]
-    f.input :profile, :label => "Attorney Profile"
-    f.input :avatar, :label => "Profile Photo"
+    f.input :title, as: :select, :collection => ['Principal', 'Senior Associate', 'Associate', 'Employee']
+    f.input :profile, :label => 'Attorney Profile'
+    f.input :avatar, :label => 'Profile Photo'
    end
      f.actions
    end
