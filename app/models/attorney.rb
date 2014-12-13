@@ -1,5 +1,5 @@
 class Attorney < ActiveRecord::Base
-  TITLES = ['Principal', 'Senior Associate', 'Associate', 'Office Manger']
+  TITLES = ['Principal', 'Senior Associate', 'Associate', 'Office Manager']
 
 	attr_accessible :avatar, :first_name, :last_name, :profile, :title
 	has_attached_file :avatar, :storage => :s3, :styles => { :medium => '300x300>', :thumb => '100x100>'}, :default_url => '/images/:style/missing.png'
@@ -12,6 +12,10 @@ class Attorney < ActiveRecord::Base
     def office_manager
       find_by_title(TITLES.last)
     end
+  end
+
+  def office_manager?
+    true if self.title == 'Office Manager'
   end
 
   def full_name
