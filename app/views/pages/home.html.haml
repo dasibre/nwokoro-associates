@@ -1,4 +1,4 @@
-- provide(:title, "Home")
+- provide(:title, 'Home')
 / main
 .main-container.holder
   %center
@@ -6,4 +6,9 @@
     \&nbsp;
     %h3 Nwokoro & Associates is a general liability defense law firm. We offer specialized legal services to insurance carriers, third party claim administrators and self-insured entities or individuals. We combine core competence, varied experience and industry knowhow with a new age ethical billing concept and individual handling of client matters tailored to the unique needs of each client.
     %br/
+  .info
+    - unless get_office_manager.nil?
+      = image_tag 'nwokoro-banner.png', class: "image alignleft"
+
+
   

@@ -26,7 +26,7 @@ index do
     f.inputs do 
     f.input :first_name
     f.input :last_name
-    f.input :title, as: :select, :collection => ['Principal', 'Senior Associate', 'Associate', 'Employee']
+    f.input :title, as: :select, :collection => Attorney::TITLES
     f.input :profile, :label => 'Attorney Profile'
     f.input :avatar, :label => 'Profile Photo'
    end

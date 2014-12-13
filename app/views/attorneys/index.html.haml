@@ -10,10 +10,11 @@
       - @attorneys.each do |attorney|
         .col50
           .col-holder
-            = image_tag(attorney.avatar.url(:thumb), class: "image alignleft")
-            %h5= link_to "#{attorney.full_name}", attorney_path(attorney)
-            - if attorney.profile.length > 300
-              = truncate(attorney.profile, :length => 250)
-              = link_to 'More', attorney_path(attorney)
-            - else
-              = attorney.profile
+            - unless attorney.office_manager?
+              = image_tag(attorney.avatar.url(:thumb), class: "image alignleft")
+              %h5= link_to "#{attorney.full_name}", attorney_path(attorney)
+              - if attorney.profile.length > 300
+                = truncate(attorney.profile, :length => 250)
+                = link_to 'More', attorney_path(attorney)
+              - else
+                = attorney.profile

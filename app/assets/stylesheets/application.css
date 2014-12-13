@@ -9,6 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require pages.css.scss
+ *= require attorneys.css.scss
+ *= require contact.css.scss
+ *= require blogit.css.scss
  */
 @import url('//fonts.googleapis.com/css?family=Open+Sans:400,600italic,600,400italic,300italic,300,700,700italic,800,800italic');
 @import url('//fonts.googleapis.com/css?family=Oswald:400,700,300');
@@ -1561,7 +1565,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 }
 .disc li {
 	padding:0 0 0 16px;
-	background:url(../images/bullet2.png) no-repeat 0 9px;
+	background: url('/assets/bullet.png') no-repeat 0 9px;
 }
 .disc ul {margin:0 0 0 -2px;}
 /* check */
@@ -1641,7 +1645,7 @@ a:hover .icon.ico6{background:url(../images/ico6-hover.png) no-repeat;}
 }
 .accordion .opener {
 	display:block;
-	background:#fbfbfb url(../images/arrows.png) no-repeat 100% 14px;	
+	background:#fbfbfb url(../images/arrows.png) no-repeat 100% 14px;
 	border:1px solid #e4e4e4;
 	border-width:1px 1px 0 1px;
 	color:#222;
@@ -2356,7 +2360,7 @@ address {
 }
 .links li {
 	vertical-align:top;
-	background:url(../images/bullet.png) no-repeat 0 9px;
+	background:url('/assets/bullet.png') no-repeat 0 9px;
 	padding:0 0 10px 13px;
 }
 .links li:last-child {
