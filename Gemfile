@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.0.0'
 gem 'rails', '3.2.12'
 
 gem 'json'
@@ -9,6 +9,7 @@ gem 'haml-rails'
 gem 'activeadmin', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.1'
 gem 'paperclip', '~> 3.0'
+gem 'RedCloth', '~> 4.2'
 gem 'aws-sdk'
 gem 'blogit'
 gem 'client_side_validations', '~> 3.2.5'
@@ -42,7 +43,6 @@ group :development, :test do
   gem 'meta_request'
   gem 'rails-erd'
   gem 'sqlite3'
-  gem 'aws-sdk'
 end
 
 
