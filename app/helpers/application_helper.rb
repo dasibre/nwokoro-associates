@@ -14,4 +14,8 @@ module ApplicationHelper
 			link_to link_text, link_path
 		end		
 	end
+
+	def law_firm_name
+		'Nwokoro & Scola'
+	end
 end
